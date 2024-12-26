@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Porto Containers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="logo">Global Porto Containers</div>
+            <div class="toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#containers">Containers</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#modulos">Módulos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </nav>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+    <div id="hero">
+        <h1>Global Porto Containers</h1>
+        <button>Clique Aqui</button>
+    </div>
+    <div id="about">
+        <h2>Quem Somos</h2>
+        <p>Somos uma empresa especializada no comércio de containers marítimos, com foco na qualidade, sustentabilidade e soluções personalizadas para nossos clientes. Oferecemos serviços como armazenamento, estufagem e transporte, atendendo a diversas necessidades logísticas. Além disso, disponibilizamos módulos versáteis, adaptáveis para escritórios, banheiros, vestiários e muito mais. Para cargas perecíveis, temos módulos refrigerados de alta eficiência, ideais para transporte e armazenagem. Confie em nossas soluções completas para logística e infraestrutura.</p>
+
+    </div>
+    <div class="card">
+    <div id="containers">
+        <img src="assets/img/container.png" alt="">
+        <h2>Containers</h2>
+        <p>Temos containers para exportação de vários tamanhos, entre os mais conhecidos estão os de 20′ e 40′ Drys, Reefers</p>
+        <button>Clique aqui</button>
+    </div>
+    </div>
+    <div class="card">
+        <div id="projetos">
+            <img src="assets/img/projeto.jpg" alt="">
+            <h2>Projetos Especiais</h2>
+            <p>Nossos projetos especiais são feitos de containers 100% marítimos, garantindo assim qualidade e durabilidade</p>
+            <button>Clique aqui</button>
+        </div>
+    </div>
+    <div class="card">
+        <div id="modulo">
+            <img src="assets/img/modulo.jpg" alt="">
+            <h2>Modulos</h2>
+            <p>Nossos projetos especiais são feitos de containers 100% marítimos, garantindo assim qualidade e durabilidade</p>
+            <button>Clique aqui</button>
+        </div>
+    </div>
+    <footer>
+        <title>Global Porto Containers</title>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

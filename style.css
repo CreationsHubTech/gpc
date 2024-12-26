@@ -1,0 +1,137 @@
+/* Definições Globais */
+:root {
+    --primary-blue: #007BFF; /* Azul principal */
+    --secondary-yellow: #FFC107; /* Amarelo secundário */
+    --text-color: #ffffff; /* Cor do texto */
+    --background-color: #f4f4f4; /* Fundo do site */
+    --dark-blue-overlay: rgba(0, 0, 139, 0.5); /* Azul escuro com opacidade */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Barra de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-blue);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--secondary-yellow);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-blue);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+
+    .navbar .toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Ícone do Toggle */
+.navbar .toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+/* Navbar Responsivo com Links */
+.navbar .toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Seção Hero */
+#hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('hero-background.jpg'); /* Substitua pelo caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-blue-overlay);
+    z-index: 1;
+}
+
+#hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+/* Seção About */
+#about {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--primary-blue);
+}
+
+#about p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
