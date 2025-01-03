@@ -1,0 +1,108 @@
+.sobre {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  justify-items: end;
+}
+
+.sobre > .img-container img {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .15);
+  border-radius: 4px;
+}
+
+.sobre-exp {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+
+.sobre-exp-contagem > .img-container {
+  position: relative;
+  max-width: 186px;
+  display: grid;
+}
+
+.sobre-exp-contagem > .img-container img {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .15);
+}
+
+.sobre-exp-contagem > .img-container > p {
+  font-size: 1.5rem;
+  font-family: var(--font-primaria);
+  font-weight: bolder;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  align-content: center;
+  color: #FFF;
+  padding: .5rem;
+}
+
+.idade {
+  font-size: 5rem;
+}
+
+.sobre-exp-lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sobre-exp-lista ul li {
+  margin-bottom: 2rem;
+}
+
+.sobre-exp-lista ul li h6 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sobre a {
+  background: linear-gradient(45deg, var(--gradiente-azul-1));
+  grid-column: 2;
+  place-items: end;
+}
+
+.sobre a:hover {
+  background: linear-gradient(45deg, var(--gradiente-azul-2));
+}
+
+@media (max-width: 1000px) {
+  .sobre {
+    display: block;
+  }
+
+  .sobre > .img-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .sobre > .img-container picture {
+    display: block;
+    width: 100%;
+  }
+
+  .sobre > .img-container img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .sobre .sobre-exp {
+    display: block;
+  }
+
+  .sobre-exp-contagem {
+    display: none;
+  }
+
+  .sobre a {
+    place-items: initial;
+  }
+}

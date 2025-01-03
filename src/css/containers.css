@@ -1,0 +1,37 @@
+#containers {
+  background: linear-gradient(45deg, var(--gradiente-azul-1));
+}
+
+.containers {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.containers h5 {
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.containers h1 {
+  grid-row: 2;
+  grid-column: 1 / -1;
+}
+
+.containers a {
+  background: linear-gradient(var(--gradiente-amarelo));
+  color: #333;
+}
+
+@media (max-width: 680px) {
+  .containers img {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+  }
+
+  .containers-conteudo {
+    grid-column: 1 / -1;
+  }
+}

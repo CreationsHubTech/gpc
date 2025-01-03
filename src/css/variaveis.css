@@ -1,0 +1,16 @@
+:root {
+  --c-f: #FFFFFF;
+  --c-azul-1: #2D387D;
+  --c-azul-2: #1A2466;
+  --c-azul-3: #0F1850;
+  --c-azul-4: #081041;
+  --c-azul-5: #020827;
+  --c-amarela-1: #FDCF33;
+  --c-1: #111111;
+  --gradiente-azul-1: #0F1850, #2237B6;
+  --gradiente-azul-2: #0a113d, #152997;
+  --gradiente-amarelo: #FDCF33, #e0b423;
+  --gradiente-amarelo-2: #e9bb24, #c99f16;
+
+  --font-primaria: "Roboto", serif;
+}

@@ -1,0 +1,20 @@
+#main {
+  height: calc(100dvh - 100px);
+  background: url('/src/imgs/main-bg.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  align-content: end;
+  place-items: start;
+}
+
+.main > a {
+  background: linear-gradient(45deg, var(--gradiente-azul-1));
+}
+
+.main > a:hover {
+  background: linear-gradient(45deg, var(--gradiente-azul-2));
+}

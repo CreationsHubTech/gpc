@@ -1,65 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Porto Containers - Modelos personalizados e mais!">
+    <link rel="shortcut icon" href="./src/imgs/icons/favicon.png" type="image/png">
     <title>Global Porto Containers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body>
-        <nav class="navbar">
-            <div class="logo">Global Porto Containers</div>
-            <div class="toggle" onclick="toggleMenu()">☰</div>
-            <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#containers">Containers</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#modulos">Módulos</a>
-                <a href="#contato">Contato</a>
-            </div>
-        </nav>
-        <script>
-            function toggleMenu() {
-                const menu = document.querySelector('.menu');
-                menu.classList.toggle('active');
-            }
-        </script>
-    <div id="hero">
-        <h1>Global Porto Containers</h1>
-        <button>Clique Aqui</button>
-    </div>
-    <div id="about">
-        <h2>Quem Somos</h2>
-        <p>Somos uma empresa especializada no comércio de containers marítimos, com foco na qualidade, sustentabilidade e soluções personalizadas para nossos clientes. Oferecemos serviços como armazenamento, estufagem e transporte, atendendo a diversas necessidades logísticas. Além disso, disponibilizamos módulos versáteis, adaptáveis para escritórios, banheiros, vestiários e muito mais. Para cargas perecíveis, temos módulos refrigerados de alta eficiência, ideais para transporte e armazenagem. Confie em nossas soluções completas para logística e infraestrutura.</p>
 
+<body>
+    <div id="root">
+        <header class="header-bg">
+            <div class="container header">
+                <img class="logo" src="./src/imgs/logo.png" alt="Logo Global Porto Containers" width="250px">
+                <nav class="nav-topo">
+                    <button class="btn-mobile" aria-expanded="false" aria-controls="burger" data-js="menuBotao">
+                        <label for="burger" class="burger">
+                            <input id="burger" type="checkbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </button>
+                    <ul class="nav-topo-links" data-js="menu-links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="mb8">
+            <div class="container main">
+                <h5 class="f-p-m-b cs-1 mb1 dec">Somos a melhor oferta de logística</h5>
+                <h1 class="f-p-xxl cw mb2">GLOBAL<br> Porto Containers<span class="dot">.</span></h1>
+                <a class="cs-1 btn mb2" href="#">Saiba Mais!</a>
+            </div>
+        </main>
+        <section id="sobre" class="mb8">
+            <div class="container sobre">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="./src/imgs/navio-container-bg.jpg">
+                        <img src="./src/imgs/navio-container.jpg" alt="Navio container carregando diversos containers">
+                    </picture>
+                </div>
+                <div class="sobre-desc">
+                    <h5 class="f-p-m-b cs-1 mb1 dec">Sobre a empresa</h5>
+                    <h1 class="f-p-xxl mb2 cp-3">Quem Somos</h1>
+                    <p class="f-p-r mb2 cp-5">Somos uma empresa especializada no comércio de containers marítimos, com
+                        foco
+                        na
+                        qualidade,
+                        sustentabilidade e soluções personalizadas para nossos clientes. Oferecemos serviços como
+                        armazenamento, estufagem e transporte, atendendo a diversas necessidades logísticas. Além disso,
+                        disponibilizamos módulos versáteis, adaptáveis para escritórios, banheiros, vestiários e muito
+                        mais.
+                        Para cargas perecíveis, temos módulos refrigerados de alta eficiência, ideais para transporte e
+                        armazenagem. Confie em nossas soluções completas para logística e infraestrutura.</p>
+                    <div class="sobre-exp mb2">
+                        <div class="sobre-exp-contagem">
+                            <div class="img-container">
+                                <img src="./src/imgs/anos-experiencia.jpg" alt="">
+                                <p><span class="idade">10</span><br> Anos de experiência</p>
+                            </div>
+                        </div>
+                        <div class="sobre-exp-lista">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h6 class="f-p-m-b cp-3 mb1"><img src="./src/imgs/icons/alugar.jpg" width="50"
+                                                alt=""> Locação de Containers</h6>
+                                        <p class="cp-5 f-p-s">Disponibilizamos containers marítimos e módulos habitáveis
+                                            para
+                                            locação,
+                                            garantindo
+                                            qualidade, rapidez e praticidade.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h6 class="f-p-m-b cp-3 mb1"><img src="./src/imgs/icons/caminhao.jpg" width="50"
+                                                alt=""> Comércio de Containers</h6>
+                                        <p class="cp-5 f-p-s">Oferecemos uma ampla variedade de containers marítimos e
+                                            módulos
+                                            habitáveis,
+                                            novos e
+                                            usados, ideais para projetos residenciais, comerciais ou industriais.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h6 class="f-p-m-b cp-3 mb1"><img src="./src/imgs/icons/reparo.jpg" width="50"
+                                                alt=""> Reparos e Manutenção</h6>
+                                        <p class="cp-5 f-p-s">Realizamos reparos e manutenções completas em containers
+                                            marítimos e módulos
+                                            habitáveis, assegurando durabilidade, segurança e funcionalidade para os
+                                            seus
+                                            espaços.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn cs-1" href="#">Qual o seu projeto? Fale com a gente.</a>
+                </div>
+            </div>
+        </section>
+        <section id="containers">
+            <div class="container containers">
+                <h5 class="f-p-m-b cs-1 mb1 dec">O que temos a oferecer</h5>
+                <h1 class="f-p-xxl cw mb2">Containers: Qualidade e Versatilidade</h1>
+                <div class="containers-conteudo">
+                    <p class="f-p-r mb2 cw">Transformamos containers marítimos em soluções versáteis e de alta qualidade
+                        para transporte,
+                        armazenamento e projetos personalizados. Com uma ampla gama de tamanhos e modelos, oferecemos
+                        opções
+                        que atendem às necessidades mais diversas, desde exportação até projetos residenciais e
+                        comerciais.
+                    </p>
+                    <a class="btn cp-5" href="#">Saiba Mais!</a>
+                </div>
+                <img src="./src/imgs/container-azul.png" alt="Container Azul" width="600">
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="container projetos">
+                <h5 class="f-p-m-b cp-1 mb1 dec">Soluções Personalizadas para Todo Tipo de Projeto</h5>
+                <h1 class="f-p-xxl cp-3 mb2">Projetos Especiais: Transformando Ideias em Realidade.</h1>
+                <img src="./src/imgs/container-cinza.jpg" alt="Container Cinza" width="640">
+                <div class="projetos-conteudo">
+                    <p class="projetos-desc f-p-r mb2 cp-3">Na nossa empresa, entendemos que cada cliente possui
+                        necessidades únicas.
+                        Por
+                        isso, oferecemos
+                        projetos especiais, utilizando containers marítimos e módulos habitáveis, adaptados para atender
+                        demandas específicas em diversos setores.</p>
+                    <div class="projetos-lista">
+                        <h2 class="f-p-x-b cp-2 mb1">Módulos Habitáveis: Espaços Versáteis e Funcionais.</h2>
+                        <ul>
+                            <li>Escritórios móveis.</li>
+                            <li>Infraestruturas temporárias para obras.</li>
+                            <li>Moradias compactas e sustentáveis.</li>
+                            <li>Espaços de lazer ou coworking.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="modelos">
+            <div class="container modelos">
+                <h5 class="f-p-m-b cs-1 mb1 dec">Nosso portifólio</h5>
+                <h1 class="f-p-xxl cp-3 mb2">Explore nossos projetos.</h1>
+                <p class="f-p-r mb2 cp-5">Fazemos a assessoria em logística e transporte, controle organizacional e
+                    mapeamento de
+                    armazenagem
+                    de carga em geral em armazéns de terceiros, operadora portuária, locação de containers.</p>
+
+                <div class="modelos-container">
+                    <ul class="modelos-lista">
+                        <li>
+                            <div>
+                                <img src="./src/imgs/modelos/image-1.jpg" alt="">
+                                <p class="f-p-m-b">Container Modelo Almoxarifado / Escritório com WC</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./src/imgs/modelos/image-2.jpg" alt="">
+                                <p class="f-p-m-b">WC20' modelo sanitário com chuveiros.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./src/imgs/modelos/image-3.jpg" alt="">
+                                <p class="f-p-m-b">WCD20' Modelo Banheiro Masculino e Feminino.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="./modulo.html" class="btn">Ver Todos os Modelos</a>
+                </div>
+            </div>
+        </section>
+        <footer id="contato">
+            <div class="container footer cw">
+                <img class="footer-logo" src="./src/imgs/logo.png" alt="Logo Global Porto Container">
+
+                <address>
+                    <ul class="atendimento">
+                        <li>
+                            <div class="horario">
+                                <h4>👨‍💻 Horário de Atendimento</h4>
+                                <p>— Segunda a Sexta</p>
+                                <p>— Das 8h às 17h</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="telefones">
+                                <h4>📞 Telefones</h4>
+                                <p><a href="tel:+5513997585125">(13) 99758-5125</a></p>
+                                <p><a href="tel:+551332321145">(13) 3232-1145</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </address>
+                <form class="contato-form" action="" method="post" autocomplete="on">
+                    <h4>Contato</h4>
+                    <div class="controle">
+                        <label for="nome">🪪 Seu nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="controle">
+                        <label for="email">📧 Seu email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    </div>
+                    <div class="controle">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem..." cols="50"
+                            rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p>Global Porto Containers - Todos os direitos reservados. &copy;</p>
+            </div>
+        </footer>
     </div>
-    <div class="card">
-    <div id="containers">
-        <img src="assets/img/container.png" alt="">
-        <h2>Containers</h2>
-        <p>Temos containers para exportação de vários tamanhos, entre os mais conhecidos estão os de 20′ e 40′ Drys, Reefers</p>
-        <button>Clique aqui</button>
-    </div>
-    </div>
-    <div class="card">
-        <div id="projetos">
-            <img src="assets/img/projeto.jpg" alt="">
-            <h2>Projetos Especiais</h2>
-            <p>Nossos projetos especiais são feitos de containers 100% marítimos, garantindo assim qualidade e durabilidade</p>
-            <button>Clique aqui</button>
-        </div>
-    </div>
-    <div class="card">
-        <div id="modulo">
-            <img src="assets/img/modulo.jpg" alt="">
-            <h2>Modulos</h2>
-            <p>Nossos projetos especiais são feitos de containers 100% marítimos, garantindo assim qualidade e durabilidade</p>
-            <button>Clique aqui</button>
-        </div>
-    </div>
-    <footer>
-        <title>Global Porto Containers</title>
-    </footer>
-    <script src="scripts.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
 </body>
+
 </html>

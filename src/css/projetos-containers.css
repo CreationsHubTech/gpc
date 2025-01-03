@@ -1,0 +1,42 @@
+.projetos-containers {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.projetos-containers-lista {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+}
+
+.projetos-containers-lista li {
+  margin-bottom: 4rem;
+}
+
+.projetos-containers-lista li:nth-child(odd) {
+  grid-column: 1 / 4;
+}
+
+.projetos-containers-lista li:nth-child(even) {
+  grid-column: 3 / -1;
+}
+
+.projetos-containers-lista p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .projetos-containers-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-containers-lista li:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  .projetos-containers-lista li:nth-child(even) {
+    grid-column: 1 / -1;
+  }
+  
+}
