@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Enviado com Sucesso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      font-size: 2rem;
+      color: #28a745;
+    }
+
+    .container p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .container a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .container a:hover {
+      background-color: #0056b3;
+    }
+
+    .success-icon {
+      font-size: 50px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="success-icon">&#10003;</div>
+    <h1>Email enviado com sucesso!</h1>
+    <p>Obrigado por entrar em contato. Em breve, retornaremos sua mensagem.</p>
+    <a href="./index.html">Voltar à Página Inicial</a>
+  </div>
+  <script>
+    setTimeout(() => {
+      window.location.href = './index.html';
+    }, 5000);
+  </script>
+</body>
+
+</html>
